@@ -22,3 +22,6 @@ prices = {
 # prices_and_names = zip(prices.values(), prices.keys())
 # print(min(prices_and_names)) # OK
 # print(max(prices_and_names)) #ValueError: max() arg is an empty sequence
+
+min(prices, key=lambda k: prices[k]) # Returns 'FB'
+max(prices, key=lambda k: prices[k]) # Returns 'AAPL'
